@@ -2,11 +2,6 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
-  deployment:
-    runs-on: ubuntu-latest
-    environment: 
-      name: production
-      url: https://github.com
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
@@ -21,3 +16,8 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+  deployment:
+      runs-on: ubuntu-latest
+      environment: 
+        name: production
+        url: https://github.com
