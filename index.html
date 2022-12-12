@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <h1>weather</h1>
+    <div class="form">
+        <input type="text" name="name" autocomplete='off' id="myInput" required onclick="getVal()">
+        <label for="name" class="label-name">
+            <span class="content-name">Enter city name</span>
+        </label>
+    </div>
+    <div id="weather"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
